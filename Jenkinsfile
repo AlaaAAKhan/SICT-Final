@@ -1,6 +1,10 @@
 pipeline {
     agent {
-        label 'built-in'
+        any
+    }
+
+    environment {
+        PATH = "/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:${env.PATH}"
     }
 
     tools {
@@ -10,7 +14,6 @@ pipeline {
     stages {
         stage('Test & Package') {
             steps {
-                // This is the correct place for the 'steps' method
                 sh 'mvn clean package'
             }
         }
