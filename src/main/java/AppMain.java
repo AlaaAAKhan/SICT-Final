@@ -20,15 +20,21 @@ public class AppMain {
 
         int choice = scanner.nextInt();
         String operation = "";
-        switch(scanner.nextInt()) {
+        switch(choice) {
             case 1:
-                operation = "Addition";
+                operation = "Add";
+                break;
             case 2:
-                operation = "Subtraction";
+                operation = "Subtract";
+                break;
             case 3:
-                operation = "Multiplication";
+                operation = "Multiply";
+                break;
             case 4:
-                operation = "Division";
+                operation = "Divide";
+                break;
+            default:
+                System.out.println("Please enter a valid choice");
         }
 
         try {
