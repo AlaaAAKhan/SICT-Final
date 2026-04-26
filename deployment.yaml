@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: calculator-deployment
+spec:
+  replicas: 3 # Have 3 copies running.
+  selector:
+    matchLabels:
+      app: calculator
+  template:
+    metadata:
+      labels:
+        app: calculator
+    spec:
+      containers:
+        - name: calculator-container
+          image: java-calc-app:latest # The Docker image name
+          imagePullPolicy: Never # Tells Minikube to use the local image
+          stdin: true # Needed for Scanner
+          tty: true   # Needed for Scanner
