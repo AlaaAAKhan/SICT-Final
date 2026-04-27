@@ -7,4 +7,4 @@ FROM amazoncorretto:24-alpine
 WORKDIR /app
 
 COPY --from=build /app/target/*.jar app.jar
-CMD ["java", "-jar", "app.jar"]
+CMD ["java", "-Dlogback.statusListenerClass=ch.qos.logback.core.status.NopStatusListener", "-jar", "app.jar"]

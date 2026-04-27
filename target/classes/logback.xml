@@ -3,7 +3,13 @@
         <encoder class="net.logstash.logback.encoder.LogstashEncoder" />
     </appender>
 
+    <appender name="jsonFile" class="ch.qos.logback.core.FileAppender">
+        <file>logs/calculator.json</file>
+        <encoder class="net.logstash.logback.encoder.LogstashEncoder" />
+    </appender>
+
     <root level="INFO">
         <appender-ref ref="jsonConsole" />
+        <appender-ref ref="jsonFile"    />
     </root>
 </configuration>

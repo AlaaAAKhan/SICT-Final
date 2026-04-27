@@ -1,0 +1,5 @@
+{"@timestamp":"2026-04-26T17:48:28.917209-04:00","@version":"1","message":"Calculated: 2.0 Multiply 6.0","logger_name":"Calculator","thread_name":"AppMain.main()","level":"INFO","level_value":20000}
+{"@timestamp":"2026-04-26T17:50:42.144858-04:00","@version":"1","message":"Calculated: 7.0 Add 3.0","logger_name":"Calculator","thread_name":"main","level":"INFO","level_value":20000}
+{"@timestamp":"2026-04-26T17:50:42.156796-04:00","@version":"1","message":"Calculated: 10.0 Divide 0.0","logger_name":"Calculator","thread_name":"main","level":"INFO","level_value":20000}
+{"@timestamp":"2026-04-26T17:50:42.157025-04:00","@version":"1","message":"Mathematical error: Cannot divide by zero","logger_name":"Calculator","thread_name":"main","level":"ERROR","level_value":40000}
+{"@timestamp":"2026-04-26T17:50:42.157987-04:00","@version":"1","message":"Calculated: 5.0 Multiply 3.0","logger_name":"Calculator","thread_name":"main","level":"INFO","level_value":20000}
